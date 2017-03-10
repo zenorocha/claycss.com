@@ -1,0 +1,14 @@
+.docs header {
+	padding: $base-size 0;
+	background-color: $content-header-bg; 
+}
+
+.about {
+	padding: $base-size 0;
+	font-size: 18px;
+}
+
+.about.about-inverted {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #FFF;
+}

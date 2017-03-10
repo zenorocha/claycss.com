@@ -1,0 +1,38 @@
+.sidebar-offset {
+	@media (min-width: $grid-float-breakpoint) {
+		margin-left: 376px;
+
+		.container-fluid {
+			padding-left: $base-size * 2;
+			padding-right: $base-size * 4;
+		}
+	}
+}
+
+.sidenav-fixed.sidenav-menu-slider, .sidenav-fixed.sidenav-menu-slider.open {
+	@media (max-width: $grid-float-breakpoint) {
+		@include transition(all 0.3s $ease-in-out-back);
+	}
+
+	@media (min-width: $grid-float-breakpoint) {
+		visibility: visible;
+		width: 376px;
+	}
+}
+
+
+.sidenav-menu-slider .sidenav-menu {
+	@media (min-width: $grid-float-breakpoint) {
+		width: 376px;
+	}
+}
+
+.sidenav-fixed.sidenav-menu-slider .sidenav-menu {
+	bottom: 0;
+	top: $base-size * 2;
+	height: initial;
+
+	@media (min-width: $grid-float-breakpoint) {
+		top: $base-size * 2.7;
+	}
+}
