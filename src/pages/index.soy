@@ -11,10 +11,15 @@ description: "Something nice and compelling about the project. Make it short and
 {template .render}
 	{call main.render data="all"}
 		{param content kind="html"}
-			{call .header data="all" /}
-			{call .why /}
-			{call .how /}
-			{call .footer /}
+			{call Sidebar.render data="all"}
+				{param section: $site.index.children[1] /}
+			{/call}
+			<div class="sidebar-offset">
+				{call .header data="all" /}
+				{call .why /}
+				{call .how /}
+				{call .footer /}
+			</div>
 		{/param}
 	{/call}
 {/template}
