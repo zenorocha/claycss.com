@@ -1,36 +1,43 @@
 .sidebar-offset {
 	@media (min-width: $grid-float-breakpoint) {
-		margin-left: 376px;
+		margin-left: $sidebar-width;
+	}
 
-		.container-fluid {
+	.container-fluid {
+		@media (min-width: $screen-xs) {
+			padding-left: $base-size;
+			padding-right: $base-size * 2;
+		}
+
+		@media (min-width: $screen-md) {
 			padding-left: $base-size * 2;
 			padding-right: $base-size * 4;
 		}
 	}
 }
 
+.sidenav-menu-slider .sidenav-menu {
+	@media (min-width: $grid-float-breakpoint) {
+		width: $sidebar-width;
+	}
+}
+
 .sidenav-fixed.sidenav-menu-slider, .sidenav-fixed.sidenav-menu-slider.open {
+	visibility: visible;
+
 	@media (max-width: $grid-float-breakpoint) {
 		@include transition(all 0.3s $ease-in-out-back);
 	}
 
 	@media (min-width: $grid-float-breakpoint) {
-		visibility: visible;
-		width: 376px;
-	}
-}
-
-
-.sidenav-menu-slider .sidenav-menu {
-	@media (min-width: $grid-float-breakpoint) {
-		width: 376px;
+		width: $sidebar-width;
 	}
 }
 
 .sidenav-fixed.sidenav-menu-slider .sidenav-menu {
 	bottom: 0;
-	top: $base-size * 2;
 	height: initial;
+	top: $base-size * 2;
 
 	@media (min-width: $grid-float-breakpoint) {
 		top: $base-size * 2.7;
