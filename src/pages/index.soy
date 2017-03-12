@@ -15,84 +15,24 @@ description: "Something nice and compelling about the project. Make it short and
 				{param section: $site.index.children[1] /}
 			{/call}
 			<div class="sidebar-offset">
-				{call .header data="all" /}
-				{call .why /}
-				{call .how /}
-				{call .footer /}
+				{call .header /}
 			</div>
 		{/param}
 	{/call}
 {/template}
 
 /**
- * @param site
+ *
  */
 {template .header}
-	<header class="header text-center">
+	<header class="header home">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<h1>{$site.title}</h1>
-					<h2>{$site.index.description}</h2>
-
-					<p>
-						<a href="#" class="btn btn-lg btn-primary">Main call to action</a>
-					</p>
+				<div class="col-md-10 col-md-offset-1 col-xs-10">
+					<img src="/images/LexiconLogoHome.png" />
+					<h1>A consistent design system to help you build beautiful web apps easily</h1>
 				</div>
 			</div>
 		</div>
 	</header>
-{/template}
-
-/**
- *
- */
-{template .why}
-	<article class="about about-inverted text-center">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<h2>Start with why</h2>
-
-					<p>Through the WHY, a story will arise, which will create trust and make an idea, a service, or a project unique. As Simon Sinek has said, having loyal users is all about attracting the people who share your fundamental beliefs. Remember: People don't buy what you do. They buy why you do it. I'll say it again: People don't buy what you do. They buy why you do it.</p>
-				</div>
-			</div>
-		</div>
-	</article>
-{/template}
-
-/**
- *
- */
-{template .how}
-	<article class="about text-center">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<h2>It's easier than you think</h2>
-
-					<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo ultricies vehicula ut.</p>
-				</div>
-			</div>
-		</div>
-	</article>
-{/template}
-
-/**
- *
- */
-{template .footer}
-	<footer class="footer">
-		<div class="container-fluid">
-			<div class="row">
-				<p class="col-xs-4 col-xs-offset-2">
-					Copyright © 2016 <a href="https://liferay.com">Liferay, Inc</a>
-				</p>
-
-				<p class="col-xs-4 text-right">
-					Powered by <a href="http://wedeploy.com">WeDeploy™</a>
-				</p>
-			</div>
-		</div>
-	</footer>
 {/template}
