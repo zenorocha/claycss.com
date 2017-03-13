@@ -17,20 +17,28 @@
 }
 
 .sidenav-menu-slider .sidenav-menu {
+	width: 100%;
+
 	@media (min-width: $grid-float-breakpoint) {
 		width: $sidebar-width;
 	}
 }
 
-.sidenav-fixed.sidenav-menu-slider, .sidenav-fixed.sidenav-menu-slider.open {
+.sidenav-fixed.sidenav-menu-slider {
 	visibility: visible;
 
-	@media (max-width: $grid-float-breakpoint) {
-		@include transition(all 0.3s $ease-in-out-back);
+	&.open {
+		width: 100%;
 	}
 
-	@media (min-width: $grid-float-breakpoint) {
-		width: $sidebar-width;
+	&, &.open {
+		@media (max-width: $grid-float-breakpoint) {
+			@include transition(all 0.3s $ease-out-quint);
+		}
+
+		@media (min-width: $grid-float-breakpoint) {
+			width: $sidebar-width;
+		}
 	}
 }
 
@@ -40,6 +48,6 @@
 	top: $base-size * 2;
 
 	@media (min-width: $grid-float-breakpoint) {
-		top: $base-size * 2.7;
+		top: $base-size * 3.25;
 	}
 }
