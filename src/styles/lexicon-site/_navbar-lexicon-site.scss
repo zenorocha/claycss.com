@@ -4,6 +4,7 @@
 	min-height: $base-size * 2;
 
 	@media (min-width: $grid-float-breakpoint) {
+		min-height: $base-size * 3.25;
 		padding-top: 14px;
 	}
 

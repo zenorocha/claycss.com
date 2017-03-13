@@ -1,6 +1,7 @@
 .docs header {
-	padding: $base-size 0;
 	background-color: $content-header-bg;
+	min-height: $base-size * 3.25;
+	padding: $base-size 0;
 }
 
 .about {

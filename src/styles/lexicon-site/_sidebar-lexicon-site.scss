@@ -6,7 +6,7 @@
 	}
 
 	.sidebar-header {
-		padding: $base-size 24px 12px;
+		padding: $base-size / 2 24px 12px;
 
 		@media (max-width: $grid-float-breakpoint) {
 			padding: 16px;
