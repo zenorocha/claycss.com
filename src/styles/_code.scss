@@ -8,9 +8,8 @@
 }
 
 .code-container .btn-copy {
-	-webkit-transition: background 0.3s ease-in-out;
-	-o-transition: background 0.3s ease-in-out;
-	transition: background 0.3s ease-in-out;
+	@include transition(background 0.3s ease-in-out);
+
 	background: rgba(255, 255, 255, 0.6);
 	height: 24px;
 	line-height: 24px;
