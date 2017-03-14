@@ -13,33 +13,33 @@ A textfield is the most basic pattern for introducing text for a conversation be
 
 ### Default
 
-![default empty state](../../../images/textfield.png)
+![default empty state](/images/textfield.png)
 
 ### Active
 
-![default active state](../../../images/textfieldActive.png)
+![default active state](/images/textfieldActive.png)
 
 ### Disabled
 
-![default disabled state](../../../images/textfieldDisabled.png)
+![default disabled state](/images/textfieldDisabled.png)
 
 ### Read only TODO
 
-![default disabled state](../../../images/textfieldDisabled.png)
+![default disabled state](/images/textfieldDisabled.png)
 
 ## Validations
 
 ### Success
 
-![default success state](../../../images/textfieldSuccess.png)
+![default success state](/images/textfieldSuccess.png)
 
 ### Warning
 
-![default warning state](../../../images/textfieldWarning.png)
+![default warning state](/images/textfieldWarning.png)
 
 ### Error
 
-![default error state](../../../images/textfieldError.png)
+![default error state](/images/textfieldError.png)
 
 ## Variations
 
@@ -50,7 +50,7 @@ TODO: Plot textfield variations
 
 A text area is similar to a text field input but for several lines of text. Text areas allow users to introduce long description of products as an example.
 
-![text area](../../../images/textarea.png)
+![text area](/images/textarea.png)
 
 ## Usage
 

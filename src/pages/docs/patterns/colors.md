@@ -15,7 +15,7 @@ Colors have a huge impact in a system as they define the visual identity, they b
 
 Primary colors define part of the visual identity of Lexicon as a system. These colors have been carefully thought to be easily combined and be sure that accessibility is well covered.
 
-![set of 4 primary colors](../../../images/colorsPrimary.png)
+![set of 4 primary colors](/images/colorsPrimary.png)
 
 | Color | Usage |
 | ---- | ----- |
@@ -28,7 +28,7 @@ Primary colors define part of the visual identity of Lexicon as a system. These 
 
 Secondary colors are frequently used colors, also important as primary but do not define the visual identity in a stronger way as Primary colors do.
 
-![set of 5 secondary colors and its variations, also 5](../../../images/colorsSecondary.png)
+![set of 5 secondary colors and its variations, also 5](/images/colorsSecondary.png)
 
 | Color | Usage |
 | ----- | ----- |

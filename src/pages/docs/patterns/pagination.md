@@ -21,7 +21,7 @@ Pagination allows navigation between chunks, also denominated pages, of a datase
 
 Use it when you need a simple pagination pattern that does not require to change the page size.
 
-![default image](../../../images/pagination.png)
+![default image](/images/pagination.png)
 
 ### Pagination bar
 
@@ -34,4 +34,4 @@ Interactive components:
 * Arrows: to move to previous or next page.
 * Ellipsis: to select intermediate pages not possible to see due to the number of pages.
 
-![default image](../../../images/paginationBar.png)
+![default image](/images/paginationBar.png)

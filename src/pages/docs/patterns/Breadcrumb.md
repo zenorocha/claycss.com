@@ -9,7 +9,7 @@ weight: 1
 
 Breadcrumb is a secondary navigation pattern that identifies the page position inside a hierarchy.
 
-![breadcrumb](../../../images/breadcrumb.png)
+![breadcrumb](/images/breadcrumb.png)
 
 ## Usage
 

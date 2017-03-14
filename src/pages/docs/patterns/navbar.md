@@ -7,7 +7,7 @@ weight: 1
 
 A navigation bar, navbar, is an horizontal bar that provides several access points to different parts of a system.
 
-![default image](../../../images/Navbar.png)
+![default image](/images/Navbar.png)
 
 ## Usage
 
@@ -32,11 +32,11 @@ What types are being used or what are the most common cases
 
 ### Navbar with search bar
 
-![default image](../../../images/Navbar.png)
+![default image](/images/Navbar.png)
 
 ### Navbar with search bar and focus state on search textfield
 
-![default image](../../../images/NavbarFocusSearch.png)
+![default image](/images/NavbarFocusSearch.png)
 
 
 

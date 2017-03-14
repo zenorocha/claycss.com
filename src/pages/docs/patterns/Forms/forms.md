@@ -32,7 +32,7 @@ In mobile view ports field lengths should be half of the screen or full length.
 
 Fields can be mandatory/required to fill in a form. The way to mark a field as mandatory is:
 
-![example of mandatory field](../../../images/textfieldMandatory.png)
+![example of mandatory field](/images/textfieldMandatory.png)
 
 ## Inline validation
 
@@ -44,7 +44,7 @@ Forms have inline validation. All form fields that can be checked against a set 
 
 General form actions always placed at the end of the form and they are always placed in same order: Primary, Secondary (default), Negative (Link). The button size to use is large.
 
-![button order example](../../../images/buttonOrder.png)
+![button order example](/images/buttonOrder.png)
 
 ### Interior actions
 
