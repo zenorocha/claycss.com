@@ -33,27 +33,10 @@
 			</div>
 
 			<div class="sidebar-body">
-				{call ElectricNavigation.render}
-					{param anchorVariant: 'sidebar' /}
-					{param elementClasses: 'nav nav-nested nav-pills nav-stacked' /}
-					{param listItemClasses: '' /}
+				{call MainNavigation.render}
 					{param section: $section /}
 				{/call}
 			</div>
 		</div>
 	</nav>
 {/template}
-
-/**
- * @param page
- */
-{deltemplate ElectricNavigation.anchor variant="'sidebar'"}
-	{if $page.icon}
-		<svg class="lexicon-icon icon-monospaced">
-			<use xlink:href="/vendor/lexicon/icons.svg#{$page.icon}" />
-		</svg>
-	{/if}
-	<a href="{$page.url}">
-		<span>{$page.title}</span>
-	</a>
-{/deltemplate}
