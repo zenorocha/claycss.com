@@ -163,7 +163,7 @@ layout: "guide"
 
 		<h5>_styled/css/_portlet.scss</h5>
 
-<pre><code>{literal}```@import "portlet/variables_custom";
+<pre><code>{literal}@import "portlet/variables_custom";
 @import "portlet/variables";
 
 @import "portlet/controls";
@@ -175,12 +175,12 @@ layout: "guide"
 
 @import "portlet/misc";
 
-@import "portlet/app_components";```{/literal}</code></pre>
+@import "portlet/app_components";{/literal}</code></pre>
 
 
 		<p><code>{literal}_variables.scss{/literal}</code> should contain lexicon-base style variables and <code>{literal}_variables_custom.scss{/literal}</code> should contain variables that overwrite or add atlas styles.</p>
 		<p>The file structure should look similar to:</p>
-		<pre><code>{literal}```frontend-theme-classic-web
+		<pre><code>{literal}frontend-theme-classic-web
   src
     META-INF
       resources
@@ -197,7 +197,7 @@ frontend-theme-styled
           css
             portlet
               _variables.scss
-              _variables_custom.scss```{/literal}</code></pre>
+              _variables_custom.scss{/literal}</code></pre>
 	</div>
 </div>
 
@@ -209,7 +209,7 @@ frontend-theme-styled
 
 		<p>The first thing we need to do is create a files inside <code>{literal}_styled/css/taglib{/literal}</code> called <code>{literal}_card.scss{/literal}</code>, <code>{literal}_variables.scss{/literal}</code>, and <code>{literal}_variables_custom.scss{/literal}</code> and import them in <code>{literal}_styled/css/_taglib.scss{/literal}</code>. </p>
 
-<pre><code>{literal}```@import "taglib/variables_custom";
+<pre><code>{literal}@import "taglib/variables_custom";
 @import "taglib/variables";
 
 @import "./taglib/app_view_common";
@@ -246,32 +246,32 @@ frontend-theme-styled
 @import "./taglib/social_bookmarks";
 @import "./taglib/user_display";
 @import "./taglib/webdav";
-@import "./taglib/workflow_status";```{/literal}</code></pre>
+@import "./taglib/workflow_status";{/literal}</code></pre>
 
 	<p><code>{literal}_variables_custom.scss{/literal}</code> should be an empty file in _styled. In classic and admin it should contain the variable overrides below.</p>
 
-<pre><code>{literal}```$card-inverse-bg: $inverse-bg !default;
+<pre><code>{literal}$card-inverse-bg: $inverse-bg !default;
 $card-inverse-border: $inverse-border !default;
 $card-inverse-color: $inverse-color !default;
-$card-inverse-link-color: $inverse-link-color !default;```{/literal}</code></pre>
+$card-inverse-link-color: $inverse-link-color !default;{/literal}</code></pre>
 
 	<p><code>{literal}_variables.scss{/literal}</code> will contain variables for _styled.</p>
 
-<pre><code>{literal}```$card-inverse-bg: $navbar-inverse-bg !default;
+<pre><code>{literal}$card-inverse-bg: $navbar-inverse-bg !default;
 $card-inverse-border: $navbar-inverse-border !default;
 $card-inverse-color: #FFF !default;
-$card-inverse-link-color: $navbar-inverse-link-color !default;```{/literal}</code></pre>
+$card-inverse-link-color: $navbar-inverse-link-color !default;{/literal}</code></pre>
 
 	<p><code>{literal}_card.scss{/literal}</code> will contain styles for our inverse card.</p>
 
-<pre><code>{literal}```.card-inverse {
+<pre><code>{literal}.card-inverse {
 	background-color: $card-inverse-bg;
 	color: $card-inverse-color;
 
 	a {
 		color: $card-inverse-link-color;
 	}
-}```{/literal}</code></pre>
+}{/literal}</code></pre>
 
 	</div>
 </div>

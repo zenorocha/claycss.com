@@ -12,7 +12,7 @@ layout: "guide"
 
 		<h5>Syntax with Options:</h5>
 
-<pre><code class="html">{literal}```<head>
+<pre><code class="html">{literal}<head>
     <script src="side-navigation.js"></script>
 </head>
 
@@ -50,7 +50,7 @@ layout: "guide"
             width: '225px' // The width of the side navigation. Default: '225px'.
         });
     </script>
-</body>```{/literal}</code></pre>
+</body>{/literal}</code></pre>
 
 	</div>
 </div>
@@ -88,7 +88,7 @@ layout: "guide"
   <a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse0"><span class="icon-caret-down"></span></a>
 </div>
 <div class="collapse" id="codeCollapse0">
-<pre><code class="html">{literal}```<button class="btn btn-default sidenav-toggler" data-target="#mySidenavContainerId">
+<pre><code class="html">{literal}<button class="btn btn-default sidenav-toggler" data-target="#mySidenavContainerId">
     Sidenav Toggler
 </button>
 
@@ -106,7 +106,7 @@ layout: "guide"
 
 <script>
     $('.sidenav-toggler').sideNavigation();
-</script>```{/literal}</code></pre>
+</script>{/literal}</code></pre>
 </div>
 
 	</div>
@@ -137,7 +137,7 @@ layout: "guide"
 	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse1"><span class="icon-caret-down"></span></a>
 </div>
 <div class="collapse" id="codeCollapse1">
-	<pre><code class="html">{literal}```<button class="btn btn-default sidenav-toggler1">
+	<pre><code class="html">{literal}<button class="btn btn-default sidenav-toggler1">
     Sidenav Toggler 1
 </button>
 
@@ -158,7 +158,7 @@ layout: "guide"
         container: '#mySidenavContainerId1',
         position: 'right'
     });
-</script>```{/literal}</code></pre>
+</script>{/literal}</code></pre>
 </div>
 
 	</div>
@@ -292,7 +292,7 @@ layout: "guide"
 			</div>
 		</div>
 
-		<pre><code>{literal}```<head>
+		<pre><code>{literal}<head>
     <script src="side-navigation.js"></script>
 </head>
 
@@ -304,7 +304,7 @@ layout: "guide"
             ...
         </div>
     </div>
-</div>```{/literal}</code></pre>
+</div>{/literal}</code></pre>
 
 	</div>
 </div>
@@ -374,7 +374,7 @@ layout: "guide"
 			When configuring your sidenav, you can specify the url using either a string or a configuration object that will be passed to <code>{literal}$.ajax{/literal}</code> (though make sure the config object contains the url property).
 		</blockquote>
 
-		<pre><code class="html">{literal}```<div class="sidenav-container">
+		<pre><code class="html">{literal}<div class="sidenav-container">
     <a class="btn btn-default sidenav-toggler" href="">
         <span class="glyphicon glyphicon-align-justify"></span> Toggle
     </a>
@@ -409,7 +409,7 @@ layout: "guide"
         },
         ...
     });
-</script>```{/literal}</code></pre>
+</script>{/literal}</code></pre>
 
 		<h4>Lazy Loading Events and State</h4>
 		<blockquote class="blockquote-sm blockquote-success">
@@ -445,7 +445,7 @@ layout: "guide"
 			<p>Fires when the side navigation is fully closed.</p>
 		</blockquote>
 
-		<pre><code class="hljs">{literal}```// Listen directly on the side navigation element
+		<pre><code class="hljs">{literal}// Listen directly on the side navigation element
 
 $(SIDENAV).on('closed.lexicon.sidenav', function(event) {
     var sidenav = $(event.target);
@@ -457,7 +457,7 @@ $(SIDENAV).on('closed.lexicon.sidenav', function(event) {
 $(document).on('closed.lexicon.sidenav', function(event) {
     var sidenav = $(event.target);
     var toggler = event.toggler;
-});```{/literal}</code></pre>
+});{/literal}</code></pre>
 
 	</div>
 </div>
@@ -470,40 +470,40 @@ $(document).on('closed.lexicon.sidenav', function(event) {
 		<blockquote class="blockquote-sm blockquote-success">
 			<p>Manually toggles the sidenav. <b>Be aware that this method will return to the caller before the sidenav has been shown or hidden.</b></p>
 		</blockquote>
-		<p><pre><code>{literal}```$('#myTogglerId').sideNavigation('toggle')```{/literal}</code></pre></p>
+		<p><pre><code>{literal}$('#myTogglerId').sideNavigation('toggle'){/literal}</code></pre></p>
 
 		<h4><code>{literal}.sideNavigation('show'){/literal}</code></h4>
 		<blockquote class="blockquote-sm blockquote-success">
 			<p>Manually shows the sidenav. <b>Be aware that this method will return to the caller before the sidenav has been shown.</b></p>
 		</blockquote>
-		<p><pre><code>{literal}```$('#myTogglerId').sideNavigation('show')```{/literal}</code></pre></p>
+		<p><pre><code>{literal}$('#myTogglerId').sideNavigation('show'){/literal}</code></pre></p>
 
 		<h4><code>{literal}.sideNavigation('hide'){/literal}</code></h4>
 		<blockquote class="blockquote-sm blockquote-success">
 			<p>Manually toggles the sidenav. <b>Be aware that this method will return to the caller before the sidenav has been hidden.</b></p>
 		</blockquote>
-		<p><pre><code>{literal}```$('#myTogglerId').sideNavigation('hide')```{/literal}</code></pre></p>
+		<p><pre><code>{literal}$('#myTogglerId').sideNavigation('hide'){/literal}</code></pre></p>
 
 		<h4><code>{literal}.sideNavigation('destroy'){/literal}</code></h4>
 		<blockquote class="blockquote-sm blockquote-success">
 			<p>Destroys the Side Navigation instance for the items in the jQuery collection, and removes any attached event handlers and any associated data added by the plugin.</p>
 		</blockquote>
-		<p><pre><code>{literal}```$('#myTogglerId').sideNavigation('destroy')```{/literal}</code></pre></p>
+		<p><pre><code>{literal}$('#myTogglerId').sideNavigation('destroy'){/literal}</code></pre></p>
 
 		<h4><code>{literal}.sideNavigation('instance'){/literal}</code></h4>
 		<blockquote class="blockquote-sm blockquote-success">
 			<p>Returns the Side Navigation instance for the first item in the jQuery collection (similar to how any other jQuery getter method works). If the plugin hasn't been initialized, it will return null.</p>
 		</blockquote>
-		<p><pre><code>{literal}```$('#myTogglerId').sideNavigation('instance')```{/literal}</code></pre></p>
+		<p><pre><code>{literal}$('#myTogglerId').sideNavigation('instance'){/literal}</code></pre></p>
 
 		<h4><code>{literal}.sideNavigation('visible'){/literal}</code></h4>
 		<blockquote class="blockquote-sm blockquote-success">
 			<p>Returns the visible state of the sidenav.</p>
 			<p>If the sidenav is in the middle of transitioning, this will report what the visible state <b>will be after</b> the transition is finished. This allows you to call it in any state and accurately get the state of the sidenav.</p>
 		</blockquote>
-		<p><pre><code>{literal}```$('#myTogglerId').sideNavigation('show').sideNavigation('visible'); // returns true
+		<p><pre><code>{literal}$('#myTogglerId').sideNavigation('show').sideNavigation('visible'); // returns true
 
-$('#myTogglerId').sideNavigation('hide').sideNavigation('visible'); // returns false```{/literal}</code></pre></p>
+$('#myTogglerId').sideNavigation('hide').sideNavigation('visible'); // returns false{/literal}</code></pre></p>
 	</div>
 </div>
 
