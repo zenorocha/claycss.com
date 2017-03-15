@@ -101,11 +101,9 @@ layout: "guide"
 
 	<div class="col-md-12 col-sm-12">
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse0"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse0">
-	<pre><code class="html">{literal}<div class="nameplate">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="nameplate">
     <div class="nameplate-field">
         <div class="user-icon user-icon-xl">
             <img alt="thumbnail" class="img-responsive" src="/images/thumbnail_placeholder.gif">
@@ -115,9 +113,10 @@ layout: "guide"
     <div class="nameplate-content">
         <h1 class="nameplate-heading">Joe Bloggs <small class="nameplate-subheading">Subheading</small></h1>
     </div>
-</div>{/literal}</code></pre>
-</div>
-
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -281,11 +280,9 @@ layout: "guide"
 
 	<div class="col-xs-12">
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse2"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse2">
-	<pre><code>{literal}<div class="nameplate-label nameplate-label-default">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="nameplate-label nameplate-label-default">
     <div class="nameplate-field">
         <div class="user-icon">
             <img alt="thumbnail" class="img-responsive" src="../../images/thumbnail_dock.jpg">
@@ -305,9 +302,10 @@ layout: "guide"
             </span>
         </a>
     </div>
-</div>{/literal}</code></pre>
-</div>
-
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -474,12 +472,9 @@ layout: "guide"
 	</div>
 
 	<div class="col-xs-12">
-
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse2a"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse2a">
-	<pre><code>{literal}<div class="nameplate-label nameplate-label-autofit-xs-max nameplate-label-success">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="nameplate-label nameplate-label-autofit-xs-max nameplate-label-success">
     <div class="nameplate-field">
         <div class="user-icon"><img alt="thumbnail" class="img-responsive" src="../../images/thumbnail_desk.jpg"></div>
     </div>
@@ -496,9 +491,10 @@ layout: "guide"
             </span>
         </a>
     </div>
-</div>{/literal}</code></pre>
-</div>
-
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -696,11 +692,9 @@ layout: "guide"
 			</div>
 		</form>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse3"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse3">
-	<pre><code class="html">{literal}<form class="form-inline">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<form class="form-inline">
     <div class="form-group">
         <input class="form-control" type="text" />
     </div>
@@ -756,8 +750,9 @@ layout: "guide"
             </div>
         </div>
     </div>
-</form>{/literal}</code></pre>
-</div>
-
+</form>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>

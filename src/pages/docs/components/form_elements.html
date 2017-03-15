@@ -34,11 +34,9 @@ layout: "guide"
 			<textarea class="form-control" placeholder="Placeholder"></textarea>
 		</div>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse0"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse0">
-	<pre><code class="html">{literal}<div class="form-group">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="form-group">
     <label>
         Default text input
         <span class="reference-mark text-warning">
@@ -58,9 +56,10 @@ layout: "guide"
 <div class="form-group">
     <label>Textarea</label>
     <textarea class="form-control" placeholder="Placeholder"></textarea>
-</div>{/literal}</code></pre>
-</div>
-
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -143,11 +142,11 @@ layout: "guide"
 	</div>
 </div>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse3"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse3">
-  <pre><code class="html">{literal}<div class="checkbox">
+
+
+  {call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="checkbox">
     <label>
         <input type="checkbox" value="">
         Label with class checkbox
@@ -159,8 +158,10 @@ layout: "guide"
         <input type="radio">
         Regular Radio Button
     </label>
-</div>{/literal}</code></pre>
-</div>
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 
 <div class="row row-spacing">
 	<div class="col-md-12">
@@ -190,11 +191,9 @@ layout: "guide"
 			</select>
 		</div>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse4"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse4">
-	<pre><code class="html">{literal}<div class="form-group">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="form-group">
     <label>Regular Select Box</label>
     <select class="form-control">
         <option>Sample 1</option>
@@ -216,9 +215,10 @@ layout: "guide"
         <option>Sample 7</option>
         <option>Sample 8</option>
     </select>
-</div>{/literal}</code></pre>
-</div>
-
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -232,17 +232,16 @@ layout: "guide"
 			<input id="inputFile" type="file">
 		</div>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse5"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse5">
-	<pre><code class="html">{literal}<div class="form-group">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="form-group">
     <label class="sr-only">FILE UPLOAD</label>
 
     <input id="inputFile" type="file">
-</div>{/literal}</code></pre>
-</div>
-
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -293,11 +292,9 @@ layout: "guide"
 			</select>
 		</div>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse6"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse6">
-	<pre><code class="html">{literal}<div class="form-group">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="form-group">
       <label class="disabled">Disabled Text Input</label>
       <input disabled class="form-control" placeholder="Placeholder" type="text">
 </div>
@@ -310,9 +307,10 @@ layout: "guide"
 <div class="form-group">
     <label class="disabled">Textarea</label>
     <textarea class="form-control" disabled placeholder="Placeholder"></textarea>
-</div>{/literal}</code></pre>
-</div>
-
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -362,11 +360,9 @@ layout: "guide"
 			</fieldset>
 		</form>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse7"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse7">
-	<pre><code class="html">{literal}<form>
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<form>
     <fieldset disabled="">
         <div class="form-group">
             <label for="disabledTextInput">Disabled input</label>
@@ -398,9 +394,10 @@ layout: "guide"
 
         <button class="btn btn-primary" type="submit">Submit</button>
     </fieldset>
-</form>{/literal}</code></pre>
-</div>
-
+</form>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -418,11 +415,9 @@ layout: "guide"
 			<textarea class="form-control" placeholder="Placeholder" readonly>Plunger pot, extra siphon latte, as americano aromatic roast cultivar cup cup frappuccino. To go, strong, half and half foam single origin, cultivar affogato black grounds shop ut plunger pot. Con panna aroma, pumpkin spice to go, wings, aromatic single shot, aged single shot to go extraction java. Percolator americano at cultivar grinder est java percolator plunger pot shop con panna.</textarea>
 		</div>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse8"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse8">
-	<pre><code class="html">{literal}<div class="form-group">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="form-group">
     <label>Text Input (Read Only)</label>
     <input class="form-control" placeholder="Placeholder" readonly type="text">
 </div>
@@ -430,9 +425,10 @@ layout: "guide"
 <div class="form-group">
     <label>Textarea (Read Only)</label>
     <textarea class="form-control" placeholder="Placeholder" readonly></textarea>
-</div>{/literal}</code></pre>
-</div>
-
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -455,11 +451,9 @@ layout: "guide"
 			<input class="form-control input-lg" placeholder="Placeholder" type="text">
 		</div>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse9"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse9">
-	<pre><code class="html">{literal}<div class="form-group">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="form-group">
     <label>Small text input</label>
     <input class="form-control input-sm" placeholder="Placeholder" type="text">
 </div>
@@ -472,8 +466,9 @@ layout: "guide"
 <div class="form-group">
     <label>Large text input</label>
     <input class="form-control input-lg" placeholder="Placeholder" type="text">
-</div>{/literal}</code></pre>
-</div>
-
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>

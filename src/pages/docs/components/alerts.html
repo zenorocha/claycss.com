@@ -34,15 +34,14 @@ layout: "guide"
 			<strong class="lead">Danger</strong> <a href="#" class="alert-link">Something</a> is not right.
 		</div>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse4"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse4">
-	<pre><code class="html">{literal}<div class="alert alert-danger">
-    <strong class="lead">Danger</strong> <a href="#" class="alert-link">Something</a> is not right.
-</div>{/literal}</code></pre>
-</div>
-
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="alert alert-danger">
+	<strong class="lead">Danger</strong> <a href="#" class="alert-link">Something</a> is not right.
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -105,22 +104,21 @@ layout: "guide"
 			<strong class="lead">Danger</strong> Something is not right.
 		</div>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse9"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse9">
-	<pre><code class="html">{literal}<div class="alert alert-dismissible alert-danger" data-dismiss="alert" role="alert">
-    <button class="close" type="button">
-        <svg aria-hidden="true" class="icon-monospaced lexicon-icon">
-            <use xlink:href="/vendor/icons.svg#times" />
-        </svg>
-        <span class="sr-only">Close</span>
-    </button>
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="alert alert-dismissible alert-danger" data-dismiss="alert" role="alert">
+	<button class="close" type="button">
+		<svg aria-hidden="true" class="icon-monospaced lexicon-icon">
+			<use xlink:href="/vendor/icons.svg#times" />
+		</svg>
+		<span class="sr-only">Close</span>
+	</button>
 
-    <strong class="lead">Danger</strong> Something is not right.
-</div>{/literal}</code></pre>
-</div>
-
+	<strong class="lead">Danger</strong> Something is not right.
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -190,11 +188,10 @@ layout: "guide"
 			</div>
 		</div>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse10"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse10">
-  <pre><code class="html">{literal}<div class="alert alert-dismissible alert-notification alert-danger" data-dismiss="alert" role="alert">
+
+  {call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="alert alert-dismissible alert-notification alert-danger" data-dismiss="alert" role="alert">
         <button class="close" type="button">
             <svg aria-hidden="true" class="icon-monospaced lexicon-icon">
                 <use xlink:href="/vendor/icons.svg#times" />
@@ -204,8 +201,9 @@ layout: "guide"
 
         <strong class="lead">Danger:</strong>
         <p>Your session has expired. Please <a class="alert-link" href="#1">log in</a>.</p>
-    </div>{/literal}</code></pre>
-</div>
-
+    </div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>

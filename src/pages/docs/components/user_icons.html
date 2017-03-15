@@ -22,15 +22,14 @@ layout: "guide"
 
 	<div class="col-md-12">
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse0"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse0">
-	<pre><code class="html">{literal}<div class="user-icon">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="user-icon">
     <img alt="thumbnail" class="img-responsive" src="/images/thumbnail_placeholder.gif">
-</div>{/literal}</code></pre>
-</div>
-
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -75,18 +74,17 @@ layout: "guide"
 
 	<div class="col-md-12 col-xs-12">
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse1"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse1">
-	<pre><code class="html">{literal}<div class="user-icon user-icon-default"><span>JB</span></div>
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="user-icon user-icon-default"><span>JB</span></div>
 <div class="user-icon user-icon-primary"><span>SP</span></div>
 <div class="user-icon user-icon-success"><span>TT</span></div>
 <div class="user-icon user-icon-info"><span>WW</span></div>
 <div class="user-icon user-icon-warning"><span>JB</span></div>
-<div class="user-icon user-icon-danger"><span>JB</span></div>{/literal}</code></pre>
-</div>
-
+<div class="user-icon user-icon-danger"><span>JB</span></div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -122,11 +120,9 @@ layout: "guide"
 
 	<div class="col-md-12">
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse2"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse2">
-	<pre><code class="html">{literal}<div class="user-icon user-icon-circle">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="user-icon user-icon-circle">
     <img alt="thumbnail" class="img-responsive" src="/images/thumbnail_placeholder.gif">
 </div>
 
@@ -136,9 +132,10 @@ layout: "guide"
 
 <div class="user-icon user-icon-square">
     <img alt="thumbnail" class="img-responsive" src="/images/thumbnail_placeholder.gif">
-</div>{/literal}</code></pre>
-</div>
-
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -181,20 +178,19 @@ layout: "guide"
 
 	<div class="col-md-12 col-xs-12">
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse3"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse3">
-	<pre><code class="html">{literal}<div class="user-icon-square">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="user-icon-square">
     <div class="user-icon user-icon-default"><span>JB</span></div>
     <div class="user-icon user-icon-primary"><span>SP</span></div>
     <div class="user-icon user-icon-success"><span>TT</span></div>
     <div class="user-icon user-icon-info"><span>WW</span></div>
     <div class="user-icon user-icon-warning"><span>JB</span></div>
     <div class="user-icon user-icon-danger"><span>JB</span></div>
-</div>{/literal}</code></pre>
-</div>
-
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -239,17 +235,16 @@ layout: "guide"
 
 	<div class="col-md-12 col-xs-12">
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse4"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse4">
-	<pre><code class="html">{literal}<div class="user-icon user-icon-xs"><span>JB</span></div>
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="user-icon user-icon-xs"><span>JB</span></div>
 <div class="user-icon user-icon-sm"><span>SP</span></div>
 <div class="user-icon"><span>TT</span></div>
 <div class="user-icon user-icon-lg"><span>TT</span></div>
 <div class="user-icon user-icon-xl"><span>TT</span></div>
-<div class="user-icon user-icon-xxl"><span>TT</span></div>{/literal}</code></pre>
-</div>
-
+<div class="user-icon user-icon-xxl"><span>TT</span></div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>

@@ -31,11 +31,9 @@ layout: "guide"
 			<li><a href="#1"><span class="icon-caret-right"></span></a></li>
 		</ul>
 
-<div class="uxgl-toggle-code" style="margin-top:15px;">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse0"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse0">
-	<pre><code class="html">{literal}<ul class="pagination">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<ul class="pagination">
     <li class="disabled"><a href="#1"><span class="icon-caret-left"></span></a></li>
     <li class="disabled"><a href="#1"><span class="icon-double-angle-left"></span></a></li>
     <li class="active"><a href="#1">1</a></li>
@@ -52,9 +50,10 @@ layout: "guide"
     <li><a href="#1">16</a></li>
     <li><a href="#1"><span class="icon-double-angle-right"></span></a></li>
     <li><a href="#1"><span class="icon-caret-right"></span></a></li>
-</ul>{/literal}</code></pre>
-</div>
-
+</ul>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -109,11 +108,9 @@ layout: "guide"
 			</ul>
 		</div>
 
-<div class="uxgl-toggle-code" style="margin-top:15px;">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse1"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse1">
-	<pre><code class="html">{literal}<div class="dropdown pagination-items-per-page">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="dropdown pagination-items-per-page">
     <a class="dropdown-toggle" data-toggle="dropdown" href="#1">10 entries <span class="icon-sort"></span></a>
     <ul class="dropdown-menu">
         <li><a href="#1">5</a></li>
@@ -152,9 +149,10 @@ layout: "guide"
     </li>
     <li><a href="#1">16</a></li>
     <li><a href="#1"><span class="icon-caret-right"></span></a></li>
-</ul>{/literal}</code></pre>
-</div>
-
+</ul>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -213,11 +211,9 @@ layout: "guide"
 				</ul>
 			</div>
 
-<div class="uxgl-toggle-code" style="margin-top:15px;">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse2"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse2">
-	<pre><code class="html">{literal}<div class="pagination-bar pagination-sm">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="pagination-bar pagination-sm">
     <div class="dropdown pagination-items-per-page">
         ...
     </div>
@@ -227,8 +223,10 @@ layout: "guide"
     <ul class="pagination">
         ...
     </ul>
-</div>{/literal}</code></pre>
-</div>
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 
 			<p>Default</p>
 
@@ -275,11 +273,9 @@ layout: "guide"
 				</ul>
 			</div>
 
-<div class="uxgl-toggle-code" style="margin-top:15px;">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse3"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse3">
-	<pre><code class="html">{literal}<div class="pagination-bar">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="pagination-bar">
     <div class="dropdown pagination-items-per-page">
         ...
     </div>
@@ -289,8 +285,10 @@ layout: "guide"
     <ul class="pagination">
         ...
     </ul>
-</div>{/literal}</code></pre>
-</div>
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 
 			<p>Large</p>
 
@@ -337,11 +335,9 @@ layout: "guide"
 				</ul>
 			</div>
 
-<div class="uxgl-toggle-code" style="margin-top:15px;">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse4"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse4">
-	<pre><code class="html">{literal}<div class="pagination-bar pagination-lg">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="pagination-bar pagination-lg">
     <div class="dropdown pagination-items-per-page">
         ...
     </div>
@@ -351,8 +347,10 @@ layout: "guide"
     <ul class="pagination">
         ...
     </ul>
-</div>{/literal}</code></pre>
-</div>
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 
 		</div>
 	</div>

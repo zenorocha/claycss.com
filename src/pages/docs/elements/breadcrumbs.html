@@ -31,11 +31,9 @@ layout: "guide"
 			</li>
 		</ul>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse0"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse0">
-	<pre><code class="html">{literal}<ul class="breadcrumb">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<ul class="breadcrumb">
     <li><a href="#">Home</a></li>
     <li><a href="#">Components</a></li>
     <li><a href="#">Breadcrumbs and Paginations</a></li>
@@ -43,9 +41,10 @@ layout: "guide"
     <li class="active">
         <span>Active</span>
     </li>
-</ul>{/literal}</code></pre>
-</div>
-
+</ul>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 

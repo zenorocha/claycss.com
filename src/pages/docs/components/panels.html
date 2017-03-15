@@ -118,11 +118,9 @@ layout: "guide"
 			</div>
 		</div>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse00"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse00">
-	<pre><code class="html">{literal}<div aria-multiselectable="true" class="panel-group" id="accordion00" role="tablist">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div aria-multiselectable="true" class="panel-group" id="accordion00" role="tablist">
     <div class="panel panel-default">
         <div class="panel-heading" id="heading00" role="tab">
             <div class="panel-title">
@@ -137,9 +135,10 @@ layout: "guide"
             </div>
         </div>
     </div>
-</div>{/literal}</code></pre>
-</div>
-
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -190,11 +189,9 @@ layout: "guide"
 			</div>
 		</div>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse01"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse01">
-	<pre><code class="html">{literal}<div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
     <div class="panel panel-default">
         <div class="panel-heading" id="headingOne" role="tab">
             <div class="panel-title">
@@ -237,9 +234,10 @@ layout: "guide"
             </div>
         </div>
     </div>
-</div>{/literal}</code></pre>
-</div>
-
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 

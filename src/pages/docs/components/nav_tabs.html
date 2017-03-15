@@ -73,11 +73,9 @@ layout: "guide"
 	$('.nav-tabs-scroll').navTabsScrollDropdown();
 </script>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse00"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse00">
-	<pre><code class="html">{literal}<script src="../../js/nav-tabs-scroll-dropdown.js"></script>
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<script src="../../js/nav-tabs-scroll-dropdown.js"></script>
 
 <div class="nav-tabs-scroll">
     <div class="nav-tabs-scrollbar">
@@ -130,8 +128,10 @@ layout: "guide"
 
 <script>
     $('.nav-tabs-scroll').navTabsScrollDropdown();
-</script>{/literal}</code></pre>
-</div>
+</script>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 
 <div class="row row-spacing">
 	<div class="col-md-12">
@@ -267,17 +267,16 @@ layout: "guide"
 			</div>
 		</div>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse01"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse01">
-	<pre><code class="html">{literal}<ul class="nav nav-tabs">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<ul class="nav nav-tabs">
     <li class="col-xs-3">...</li>
     <li class="col-xs-3">...</li>
     <li class="col-xs-3">...</li>
     <li class="col-xs-3">...</li>
-</ul>{/literal}</code></pre>
-</div>
-
+</ul>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>

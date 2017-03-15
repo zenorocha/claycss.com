@@ -27,13 +27,12 @@ layout: "guide"
 
 	<div class="col-md-12">
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse0"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse0">
-	<pre><code class="html">{literal}<div class="card">...</div>{/literal}</code></pre>
-</div>
-
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="card">...</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -61,11 +60,9 @@ layout: "guide"
 
 	<div class="col-md-12">
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse001"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse001">
-	<pre><code class="html">{literal}<div class="card card-horizontal">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="card card-horizontal">
     <div class="card-row card-row-padded">
         <div class="card-col-field">
             <span class="icon-folder-close-alt sticker sticker-default sticker-static sticker-lg"></span>
@@ -74,7 +71,10 @@ layout: "guide"
             <span>This text will fill the remaining space.</span>
         </div>
     </div>
-</div>{/literal}</code></pre>
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 
 </div>
 
@@ -347,19 +347,20 @@ layout: "guide"
 
 	<div class="col-md-12">
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse2"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse2">
-		<pre><code class="html">{literal}<div class="card card-horizontal">
+
+
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="card card-horizontal">
     <div class="card-row">
         <div class="card-col-field" style="vertical-align: top;">top</div>
         <div class="card-col-field">middle</div>
         <div class="card-col-field" style="vertical-align: bottom;">bottom</div>
     </div>
-</div>{/literal}</code></pre>
-</div>
-
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -388,11 +389,11 @@ layout: "guide"
 
 	<div class="col-md-12">
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse3"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse3">
-		<pre><code class="html">{literal}<div class="card card-horizontal">
+
+
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="card card-horizontal">
     <div class="card-row">
         <div class="card-col-field">
             <img alt="thumbnail" src="/images/thumbnail_coffee.jpg" style="width: 150px;">
@@ -402,9 +403,10 @@ layout: "guide"
             ...
         </div>
     </div>
-</div>{/literal}</code></pre>
-</div>
-
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 
 	<div class="col-md-12">
@@ -430,17 +432,16 @@ layout: "guide"
 
 	<div class="col-md-12">
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse4"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse4">
-	<pre><code class="html">{literal}<div class="card card-horizontal">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="card card-horizontal">
     <div class="card-row card-row-padded">
         ...
     </div>
-</div>{/literal}</code></pre>
-</div>
-
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -482,15 +483,14 @@ layout: "guide"
 
 	<div class="col-md-12">
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse5"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse5">
-	<pre><code class="html">{literal}<div class="card card-horizontal card-rounded">...</div>
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="card card-horizontal card-rounded">...</div>
 <div class="card card-circle card-horizontal">...</div>
-<div class="card card-horizontal card-square">...</div>{/literal}</code></pre>
-</div>
-
+<div class="card card-horizontal card-square">...</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 
 	<div class="col-md-12">
@@ -567,12 +567,17 @@ layout: "guide"
 		<blockquote class="blockquote-sm blockquote-success">
 			<p>We have created a pattern to add checkboxes to cards, just wrap the checkbox and card in:</p>
 		</blockquote>
-		<pre><code>{literal}<div class="checkbox checkbox-card checkbox-top-left">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="checkbox checkbox-card checkbox-top-left">
     <label>
         <input type="checkbox">
     </label>
     <div class="card">...</div>
-</div>{/literal}</code></pre>
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 
 	<div class="col-xs-4">
@@ -658,12 +663,17 @@ layout: "guide"
 			<p>To make the whole card clickable just wrap the checkbox and card in:</p>
 		</blockquote>
 
-		<pre><code>{literal}<div class="checkbox checkbox-card checkbox-top-left">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="checkbox checkbox-card checkbox-top-left">
     <label>
         <input type="checkbox">
         <div class="card">...</div>
     </label>
-</div>{/literal}</code></pre>
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 
 	<div class="col-xs-4">
@@ -748,12 +758,17 @@ layout: "guide"
 		<blockquote class="blockquote-sm blockquote-success">
 			<p>We have created a pattern to add radio inputs to cards, just wrap the radio input and card in:</p>
 		</blockquote>
-		<pre><code>{literal}<div class="radio radio-card radio-top-left">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="radio radio-card radio-top-left">
     <label>
         <input type="radio">
     </label>
     <div class="card">...</div>
-</div>{/literal}</code></pre>
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 
 	<div class="col-xs-4">
@@ -839,12 +854,17 @@ layout: "guide"
 			<p>To make the whole card clickable just wrap the radio input and card in:</p>
 		</blockquote>
 
-		<pre><code>{literal}<div class="radio radio-card radio-top-left">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="radio radio-card radio-top-left">
     <label>
         <input type="radio">
         <div class="card">...</div>
     </label>
-</div>{/literal}</code></pre>
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 
 	<div class="col-xs-4">

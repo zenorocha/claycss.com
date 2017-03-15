@@ -32,11 +32,11 @@ layout: "guide"
 			</form>
 		</div>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse0"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse0">
-		<pre><code class="html">{literal}<div class="collapse-basic-search" data-toggle="collapsible-search">
+
+
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="collapse-basic-search" data-toggle="collapsible-search">
     <form class="basic-search input-group">
         <div class="input-group-input">
             <div class="basic-search-slider">
@@ -52,8 +52,10 @@ layout: "guide"
             </button>
         </div>
     </form>
-</div>{/literal}</code></pre>
-</div>
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 
 		<h3>Data API:</h3>
 
@@ -240,13 +242,14 @@ layout: "guide"
 			</div>
 		</nav>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse2"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse2">
-		<pre><code>{literal}<div></div>{/literal}</code></pre>
-</div>
 
+
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div></div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -285,13 +288,14 @@ layout: "guide"
 			</form>
 		</nav>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse3"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse3">
-		<pre><code>{literal}<div></div>{/literal}</code></pre>
-</div>
 
+
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div></div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 

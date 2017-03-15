@@ -24,19 +24,18 @@ layout: "guide"
 
 	<div class="col-md-12">
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse0"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse0">
-	<pre><code>{literal}<ul class="nav">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<ul class="nav">
     <li class="nav-heading"><span>Basic Information</span></li>
     <li><a href="#">Details</a></li>
     <li><a href="#">Catagorization</a></li>
     <li><a href="#">Documents and Media</a></li>
     <li><a href="#">Site Template</a></li>
-</ul>{/literal}</code></pre>
-</div>
-
+</ul>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -128,11 +127,9 @@ layout: "guide"
 
 	<div class="col-md-12">
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse1"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse1">
-	<pre><code>{literal}<ul class="nav nav-nested">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<ul class="nav nav-nested">
     <li>
         <a class="collapsed collapse-icon" data-toggle="collapse" href="#navCollapse01">
             Basic Information
@@ -188,9 +185,10 @@ layout: "guide"
             </ul>
         </div>
     </li>
-</ul>{/literal}</code></pre>
-</div>
-
+</ul>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -424,20 +422,19 @@ layout: "guide"
 			</li>
 		</ul>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse2"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse2">
-	<pre><code>{literal}<ul class="nav nav-pills">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<ul class="nav nav-pills">
     <li class="active"><a href="#1">Fields</a></li>
     <li><a href="#1">Settings</a></li>
     <li class="disabled"><a href="#">Documents</a></li>
     <li class="dropdown">
         ...
     </li>
-</ul>{/literal}</code></pre>
-</div>
-
+</ul>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -470,15 +467,14 @@ layout: "guide"
 			</li>
 		</ul>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse3"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse3">
-	<pre><code class="html">{literal}<ul class="nav nav-justified nav-pills">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<ul class="nav nav-justified nav-pills">
     ...
-</ul>{/literal}</code></pre>
-</div>
-
+</ul>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -517,15 +513,14 @@ layout: "guide"
 
 	<div class="col-md-12">
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse4"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse4">
-	<pre><code class="html">{literal}<ul class="nav nav-pills nav-stacked">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<ul class="nav nav-pills nav-stacked">
     ...
-</ul>{/literal}</code></pre>
-</div>
-
+</ul>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -581,11 +576,9 @@ layout: "guide"
 
 	<div class="col-md-12">
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse5"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse5">
-	<pre><code>{literal}<ul class="nav nav-nested nav-pills nav-stacked">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<ul class="nav nav-nested nav-pills nav-stacked">
     <li>
         <a aria-expanded="true" class="collapse-icon" data-toggle="collapse" href="#navPillsCollapse01">
             Basic Information
@@ -611,9 +604,10 @@ layout: "guide"
             </ul>
         </div>
     </li>
-</ul>{/literal}</code></pre>
-</div>
-
+</ul>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>
 
@@ -675,14 +669,13 @@ layout: "guide"
 
 	<div class="col-md-12">
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse6"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse6">
-	<pre><code class="html">{literal}<ul class="nav nav-rounded nav-pills nav-stacked">...</ul>
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<ul class="nav nav-rounded nav-pills nav-stacked">...</ul>
 <ul class="nav nav-circle nav-pills nav-stacked">...</ul>
-<ul class="nav nav-rounded nav-pills nav-stacked">...</ul>{/literal}</code></pre>
-</div>
-
+<ul class="nav nav-rounded nav-pills nav-stacked">...</ul>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 </div>

@@ -619,15 +619,22 @@ layout: "guide"
 
 			<p>In iOS Safari, body content under the modal will scroll when the beginning or end of scrollable content inside a modal is reached. Use the position fixed workaround by adding <code>{literal}position: fixed;{/literal}</code> to the <code>{literal}modal-open{/literal}</code> class. The body content will be scrolled to the top as a side effect.</p>
 
-			<pre><code>{literal}@media (max-width: 767px) {
+			{call ElectricCode.render}
+			{param code kind="text"}
+{literal}@media (max-width: 767px) {
     .modal-open {
         position: fixed;
     }
-}{/literal}</code></pre>
+}{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 
 		<p>The jQuery work around:</p>
 
-		<pre><code>{literal}(function($) {
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}(function($) {
 	var winScrollPos;
 	var $doc = $(document);
 	var $body = $('body');
@@ -656,7 +663,10 @@ layout: "guide"
 			}
 		}
 	});
-})(jQuery);{/literal}</code></pre>
+})(jQuery);{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 		</blockquote>
 	</div>
 </div>

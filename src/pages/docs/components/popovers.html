@@ -48,11 +48,9 @@ layout: "guide"
 	</div>
 </div>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse0"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse0">
-	<pre><code class="html">{literal}<div class="tooltip right in">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="tooltip right in">
     <div class="tooltip-arrow"></div>
     <div class="tooltip-inner">
         <div>Tooltip</div>
@@ -78,8 +76,10 @@ layout: "guide"
     <div class="tooltip-inner">
         <div>Tooltip</div>
     </div>
-</div>{/literal}</code></pre>
-</div>
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 
 <div id="popovers">
 	<div class="row row-spacing">
@@ -131,11 +131,9 @@ layout: "guide"
 		</div>
 	</div>
 
-<div class="uxgl-toggle-code">
-	<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse2"><span class="icon-caret-down"></span></a>
-</div>
-<div class="collapse" id="codeCollapse2">
-	<pre><code>{literal}<div class="popover top">
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="popover top">
     <div class="arrow"></div>
     <h3 class="popover-title">Popover top</h3>
     <div class="popover-content">
@@ -165,7 +163,9 @@ layout: "guide"
     <div class="popover-content">
         <div>Dark to go foam froth fair trade irish latte dark carajillo. Turkish aromatic a, rich single origin kopi-luwak chicory carajillo.</div>
     </div>
-</div>{/literal}</code></pre>
-</div>
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 
 </div>

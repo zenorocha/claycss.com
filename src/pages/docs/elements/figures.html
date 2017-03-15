@@ -73,11 +73,11 @@ layout: "guide"
 
 		<div class="col-md-12 col-xs-12">
 
-	<div class="uxgl-toggle-code">
-		<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse0"><span class="icon-caret-down"></span></a>
-	</div>
-	<div class="collapse" id="codeCollapse0">
-		<pre><code class="html">{literal}<div class="figure">
+
+
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="figure">
     <img alt="picture of a coffee mug" class="img-responsive" src="/images/thumbnail_coffee.jpg">
     <div class="figcaption">
         Carajillo strong, grounds redeye half and half so percolator.
@@ -113,7 +113,10 @@ layout: "guide"
             Carajillo strong, grounds redeye half and half so percolator.
         </div>
     </div>
-</div>{/literal}</code></pre>
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 
 		</div>
@@ -258,11 +261,11 @@ layout: "guide"
 		</div>
 
 		<div class="col-md-12">
-	<div class="uxgl-toggle-code">
-		<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse1"><span class="icon-caret-down"></span></a>
-	</div>
-	<div class="collapse" id="codeCollapse1">
-		<pre><code class="html">{literal}<div class="figure">
+
+
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="figure">
     <img alt="picture of a coffee mug" class="img-responsive" src="/images/thumbnail_coffee.jpg">
     <div class="figcaption figcaption-bottom">
         Carajillo strong, grounds redeye half and half so percolator.
@@ -302,7 +305,10 @@ layout: "guide"
     <div class="figcaption figcaption-bottom figcaption-danger">
         Carajillo strong, grounds redeye half and half so percolator.
     </div>
-</div>{/literal}</code></pre>
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 	</div>
 
 		</div>
@@ -354,11 +360,11 @@ layout: "guide"
 
 		<div class="col-md-12">
 
-	<div class="uxgl-toggle-code">
-		<a class="btn btn-warning btn-xs" data-toggle="collapse" href="#codeCollapse3"><span class="icon-caret-down"></span></a>
-	</div>
-	<div class="collapse" id="codeCollapse3">
-		<pre><code class="html">{literal}<div class="figure figure-square">
+
+
+		{call ElectricCode.render}
+			{param code kind="text"}
+{literal}<div class="figure figure-square">
     <img alt="Coffee Cup" class="img-responsive" src="/images/thumbnail_coffee.jpg">
     <div class="figcaption">
         Carajillo strong, grounds redeye half and half so percolator.
@@ -379,7 +385,10 @@ layout: "guide"
     <div class="figcaption figcaption-bottom">
         Carajillo strong, grounds redeye half and half so percolator.
     </div>
-</div>{/literal}</code></pre>
+</div>{/literal}
+			{/param}
+			{param mode: 'xml' /}
+		{/call}
 
 		</div>
 	</div>
