@@ -4,6 +4,7 @@ description: Elements
 layout: "guide"
 ---
 
+<div>
 <div class="row row-spacing">
 	<div class="col-md-12">
 		<h3>Table List</h3>
@@ -1124,20 +1125,21 @@ layout: "guide"
 	</div>
 </div>
 
-{literal}
-	<script>
-		$('.table-list').on('click', 'input[type="checkbox"]', function(event) {
-			var $this = $(this);
+	{literal}
+		<script>
+			$('.table-list').on('click', 'input[type="checkbox"]', function(event) {
+				var $this = $(this);
 
-			$this.closest('tr').toggleClass('active');
-		});
+				$this.closest('tr').toggleClass('active');
+			});
 
-		$(document).on('click', '.table-vertical-align-button', function(event) {
-			event.preventDefault();
+			$(document).on('click', '.table-vertical-align-button', function(event) {
+				event.preventDefault();
 
-			var className = $(this).text();
+				var className = $(this).text();
 
-			$('#verticalAlignTableListDemo').removeClass().addClass('table table-list ' + className);
-		});
-	</script>
-{/literal}
+				$('#verticalAlignTableListDemo').removeClass().addClass('table table-list ' + className);
+			});
+		</script>
+	{/literal}
+</div>
