@@ -13,7 +13,7 @@ title: "Docs"
 		{param elementClasses: 'docs' /}
 		{param content kind="html"}
 			{call Sidebar.render data="all"}
-				{param section: $site.index.children[1] /}
+				{param description: $site.index.children[0] /}
 			{/call}
 
 			{call .topics data="all" /}

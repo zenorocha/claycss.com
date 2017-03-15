@@ -1,10 +1,10 @@
 {
-  "name": "lexicon-site",
+  "name": "quartz-site",
   "version": "0.0.0",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/marcoscv-work/lexicon-site"
+    "url": "https://github.com/liferay/quartz-site"
   },
   "dependencies": {
     "bourbon": "^4.3.3",
