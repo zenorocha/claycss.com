@@ -34,7 +34,7 @@
 		}
 
 		> input.form-control {
-			background-color: $brand-darker;
+			background-color: $brand-dark-active;
 			border-radius: 4px;
 			color: $brand-darker-text;
 			padding-right: $base-size * 1.5;
@@ -44,7 +44,7 @@
 			}
 
 			&:active, &:focus {
-				color: $brand-darker-text;
+				color: #333;
 				background-color: #FFF;
 			}
 		}
@@ -122,5 +122,13 @@
 				@include transform(rotate(0));
 			}
 		}
+	}
+}
+
+.autocomplete-list a {
+	color: $brand-dark;
+
+	.autocomplete-text {
+		color: #999;
 	}
 }
