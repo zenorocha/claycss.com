@@ -1,14 +1,19 @@
+$output-bourbon-deprecation-warnings: false;
+
 $screen-sm: 900px;
+
+$content-max-width: 960px;
 
 $sidebar-width: 376px;
 
-$brand-dark-active: #467991;
+$brand-dark: #467991;
+$brand-dark-active: #5391AE;
 $brand-dark-hover: #5E9EBD;
-$brand-dark-text: #FFF;
-$brand-dark: #5391AE;
-$brand-darker-text: #FFF;
-$brand-darker: #333;
+$brand-dark-text: #abd8ef;
+$brand-darker: #305363;
+$brand-darker-text: #477990;
 
+$brand-border-color: #E1E2E8;
 $content-header-bg: #F1F3F5;
 
 $base-size: 32px;

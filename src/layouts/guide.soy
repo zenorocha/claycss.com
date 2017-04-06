@@ -33,28 +33,45 @@
 			<div class="row">
 				<div class="col-md-12">
 					{$content}
-
-					{call .feedback data="all" /}
 				</div>
 
-				<nav class="col-xs-12 col-md-offset-2 col-md-5">
+				<nav class="col-md-5 col-md-offset-2 col-xs-12">
 					{call ElectricReadingProgress.render}
 						{param elementClasses: 'docs-nav' /}
 					{/call}
 				</nav>
 			</div>
 		</div>
+
+		{call .footer /}
 	</div>
 {/template}
 
 /**
- * @param page
- * @param site
+ *
  */
-{template .feedback}
-	<div>
-		<div class="alert alert-default">
-			<p>Contribute on Github! <a href="{$site.repo ?: ''}/tree/master/{$page.srcFilePath}" class="docs-github-link" target="_blank">Edit this section</a>.</p>
+{template .footer}
+	<div class="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-7">
+					<div class="clearfix hidden-lg hidden-md"></div>
+
+					<span>Brought to you by <a class="white" href="http://www.liferay.com" target="_blank">Liferay, Inc.</a></span>
+				</div>
+				<div class="col-md-5 text-right-lg">
+					<a class="sticker sticker-default sticker-rounded sticker-static" href="https://twitter.com/Liferay_Lexicon" target="_blank">
+						<svg class="lexicon-icon">
+							<use xlink:href="/vendor/lexicon/icons.svg#twitter" />
+						</svg>
+					</a>
+					<a class="sticker sticker-default sticker-rounded sticker-static" href="https://github.com/liferay/lexicon-site/issues" target="_blank">
+						<svg class="lexicon-icon">
+							<use xlink:href="/vendor/lexicon/icons.svg#comments" />
+						</svg>
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
 {/template}

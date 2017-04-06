@@ -1,9 +1,20 @@
 .sidebar-offset {
 	@media (min-width: $grid-float-breakpoint) {
+		margin-left: $sidebar-width - 100px;
+	}
+
+	@media (min-width: $screen-sm) {
 		margin-left: $sidebar-width;
 	}
 
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
 	.container-fluid {
+		flex: 1;
+		max-width: $content-max-width;
+
 		@media (min-width: $screen-xs) {
 			padding-left: $base-size;
 			padding-right: $base-size * 2;
@@ -20,6 +31,10 @@
 	width: 100%;
 
 	@media (min-width: $grid-float-breakpoint) {
+		width: $sidebar-width - 100px;
+	}
+
+	@media (min-width: $screen-sm) {
 		width: $sidebar-width;
 	}
 }
@@ -32,11 +47,15 @@
 	}
 
 	&, &.open {
-		@media (max-width: $grid-float-breakpoint) {
+		@media (max-width: $grid-float-breakpoint - 1px) {
 			@include transition(all 0.3s $ease-out-quint);
 		}
 
 		@media (min-width: $grid-float-breakpoint) {
+			width: $sidebar-width - 100px;
+		}
+
+		@media (min-width: $screen-sm) {
 			width: $sidebar-width;
 		}
 	}
@@ -48,6 +67,6 @@
 	top: $base-size * 2;
 
 	@media (min-width: $grid-float-breakpoint) {
-		top: $base-size * 3.25;
+		top: $base-size * 3;
 	}
 }

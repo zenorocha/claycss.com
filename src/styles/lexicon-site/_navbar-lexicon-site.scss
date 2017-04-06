@@ -4,20 +4,25 @@
 	min-height: $base-size * 2;
 
 	@media (min-width: $grid-float-breakpoint) {
-		min-height: $base-size * 3.25;
-		padding-top: 14px;
+		min-height: $base-size * 3;
+		padding-left: 12px;
+		padding-top: 12px;
 	}
 
 	.logo {
 		display: inline-block;
-		margin-right: 5px;
-		width: 108px;
+		margin-right: 2px;
+		width: 109px;
+	}
+
+	small {
+		font-size: 13px;
+		line-height: 0;
 	}
 
 	.navbar-brand {
 		color: $brand-dark-text;
 		line-height: $base-size * 1.25;
-		padding-left: 24px;
 
 		small {
 			padding: 8px;
@@ -28,10 +33,10 @@
 		border-width: 0;
 		height: $base-size * 1.5;
 
-		@media (max-width: $grid-float-breakpoint) {
+		@media (max-width: $grid-float-breakpoint - 1px) {
 			.icon-bar {
-				@include transition(all 0.3s $ease-in-out-back);
 				@include transform-origin(0);
+				@include transition(all 0.3s $ease-in-out-back);
 			}
 
 			&.toggler-header-expanded {
@@ -41,6 +46,7 @@
 
 				.icon-bar:nth-of-type(2) {
 					@include transform(rotate(-115deg) scale(0.1));
+
 					opacity: 0;
 				}
 

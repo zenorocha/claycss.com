@@ -14,16 +14,18 @@
 @import "lexicon-site/content-lexicon-site";
 @import "lexicon-site/navbar-lexicon-site";
 @import "lexicon-site/sidebar-lexicon-site";
+@import "lexicon-site/table-lexicon-site";
 
 // Font
 
-@import "/vendor/source-sans-pro.css";
+@import "../vendor/source-sans-pro/source-sans-pro.css";
 
 body {
 	color: $brand-darker;
 	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: $base-size / 2;
 
-	@media (max-width: $grid-float-breakpoint) {
+	@media (max-width: $grid-float-breakpoint - 1px) {
 		margin-top: $base-size * 2;
 	}
 }
