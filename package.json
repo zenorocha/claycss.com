@@ -1,10 +1,10 @@
 {
-  "name": "quartz-site",
+  "name": "clay-site",
   "version": "0.0.0",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/liferay/quartz-site"
+    "url": "https://github.com/liferay/clay-site"
   },
   "dependencies": {
     "bourbon": "^4.3.3",
