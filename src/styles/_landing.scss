@@ -1,0 +1,51 @@
+body {
+	margin: 0;
+}
+
+.landing {
+	background-color: $brand-dark;
+	color: #FFF;
+	min-height: 100vh;
+
+	h1, h2 {
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
+
+	header, section {
+		padding: 40px 0;
+
+		p {
+			margin: 40px 0;
+			font-size: 18px;
+			text-align: center;
+		}
+
+		a {
+			color: #81CFF5;
+		}
+
+		em {
+			font-weight: bold;
+		}
+	}
+
+	header {
+		h1 {
+			font-size: 60px;
+			font-weight: 700;
+		}
+	}
+
+	.section-inverted {
+		background-color: #FFF;
+		color: $brand-dark;
+	}
+
+	.footer {
+		margin-top: 0;
+	}
+}
