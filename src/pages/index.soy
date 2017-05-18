@@ -6,7 +6,7 @@ description: "This is Clay. A web implementation of the Lexicon Experience Langu
 {namespace pageIndex}
 
 /**
- * @param site
+ *
  */
 {template .render}
 	{call main.render data="all"}
@@ -18,17 +18,17 @@ description: "This is Clay. A web implementation of the Lexicon Experience Langu
 {/template}
 
 /**
- * @param site
+ *
  */
 {template .header}
 	<header class="header home">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
-					<h1>{$site.title}</h1>
+					{call .logo data="all" /}
 
 					<h2>
-						A web implementation of the <a href="http://lexicon-site.wedeploy.io/">Lexicon Experience Language</a>; built by Liferay.
+						A web implementation of the <a href="http://lexicon-site.wedeploy.io/">Lexicon Experience Language</a>.
 					</h2>
 				</div>
 			</div>
@@ -70,6 +70,17 @@ description: "This is Clay. A web implementation of the Lexicon Experience Langu
 	</section>
 
 	{call .footer data="all" /}
+{/template}
+
+/**
+ *
+ */
+{template .logo}
+	<div class="clay-logo">
+		<img src="/images/clay_logo.png" />
+
+		<h1>Clay</h1>
+	</div>
 {/template}
 
 /**

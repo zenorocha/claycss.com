@@ -3,8 +3,6 @@ body {
 }
 
 .landing {
-	background-color: $brand-dark;
-	color: #FFF;
 	min-height: 100vh;
 
 	h1, h2 {
@@ -41,11 +39,21 @@ body {
 	}
 
 	.section-inverted {
-		background-color: #FFF;
-		color: $brand-dark;
+		background-color: $brand-dark;
+		color: #FFF;
 	}
 
 	.footer {
 		margin-top: 0;
+		padding: 47px 20px;
+	}
+
+	.clay-logo {
+		margin: 40px 0 60px;
+		text-align: center;
+
+		img {
+			max-width: 140px;
+		}
 	}
 }
