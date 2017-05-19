@@ -4,8 +4,10 @@ body {
 
 .landing {
 	min-height: 100vh;
+	color: #484B4C;
 
 	h1, h2 {
+		font-weight: 700;
 		text-align: center;
 	}
 
@@ -14,7 +16,7 @@ body {
 	}
 
 	header, section {
-		padding: 40px 0;
+		padding: 60px 0;
 
 		p {
 			margin: 40px 0;
@@ -23,7 +25,7 @@ body {
 		}
 
 		a {
-			color: #81CFF5;
+			color: $brand-clay;
 		}
 
 		em {
@@ -34,7 +36,6 @@ body {
 	header {
 		h1 {
 			font-size: 60px;
-			font-weight: 700;
 		}
 	}
 
