@@ -1,7 +1,6 @@
 .footer {
 	background-color: $brand-darker;
 	color: $brand-dark-text;
-	font-size: 14px;
 	margin-top: $base-size * 3;
 	min-height: $base-size * 4;
 	padding: $base-size / 2 0;
@@ -21,11 +20,7 @@
 	}
 
 	a {
-		color: $brand-darker-text;
-
-		&.white {
-			color: #FFF;
-		}
+		color: #FFF;
 	}
 
 	span {
